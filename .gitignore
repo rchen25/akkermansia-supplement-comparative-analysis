@@ -1,0 +1,54 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Data and outputs (not shipped)
+data/
+reports/
+*.xlsx
+
+# Zymo data: ignore all except the species table used for the report
+zr25501*
+!zr25501.250902/
+zr25501.250902/*
+!zr25501.250902/01.Pendulum.vs.Others.illumina.pe/
+zr25501.250902/01.Pendulum.vs.Others.illumina.pe/*
+!zr25501.250902/01.Pendulum.vs.Others.illumina.pe/All/
+zr25501.250902/01.Pendulum.vs.Others.illumina.pe/All/*
+!zr25501.250902/01.Pendulum.vs.Others.illumina.pe/All/Heatmaps_Subgroup1/
+zr25501.250902/01.Pendulum.vs.Others.illumina.pe/All/Heatmaps_Subgroup1/*
+!zr25501.250902/01.Pendulum.vs.Others.illumina.pe/All/Heatmaps_Subgroup1/5.Species/
+zr25501.250902/01.Pendulum.vs.Others.illumina.pe/All/Heatmaps_Subgroup1/5.Species/*
+!zr25501.250902/01.Pendulum.vs.Others.illumina.pe/All/Heatmaps_Subgroup1/5.Species/new_abun_table.tsv
+
+# Large Zymo FunctionalPathway / RawData TSVs (50–150 MB)
+zr25501*/**/FunctionalPathway/
+**/gene_fam_cpm*.tsv
+**/species_gene_fam_cpm*.tsv
+
+# Files over GitHub 100MB limit (see DATA.md for replacements)
+*.bam
+*.bai
+*.cram
+*.crai
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sam
+*.vcf
+*.vcf.gz
+*.tbi
+*.h5
+*.hdf5
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+
+# OS
+.DS_Store
